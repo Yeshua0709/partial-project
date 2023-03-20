@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ItemInventory",
+    "\\SneakerDB",
+    "\\TestUI"
   ],
+  "SelectedNode": "\\TestUI",
   "PreviewInSolutionExplorer": false
 }

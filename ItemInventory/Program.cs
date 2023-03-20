@@ -7,6 +7,7 @@ namespace ItemInventory
     {
         public static void Main(string[] args)
         {
+            //test commit
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.

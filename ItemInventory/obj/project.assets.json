@@ -4481,11 +4481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Josh\\ItemInventory\\SneakerInventory.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Partial-Project\\ItemInventory\\SneakerInventory.csproj",
       "projectName": "SneakerInventory",
-      "projectPath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Josh\\ItemInventory\\SneakerInventory.csproj",
+      "projectPath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Partial-Project\\ItemInventory\\SneakerInventory.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Josh\\ItemInventory\\obj\\",
+      "outputPath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Partial-Project\\ItemInventory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

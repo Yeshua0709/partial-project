@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lvmzPBf+1leEfsPBrC0rxirVDejwPsIofC7hmeAPz37+gWaWcxublOGAU8DKd6BFgLsdB9EwGI3VUkjKt0hbg==",
+  "dgSpecHash": "ZdRtFa8OHsnNTcVAEjNysre15/tF6ZKX9x5C7oi2ACBYfBmVvkSVV4KLgJSMWcilSzdeo3b84Zk+oSezQnNdVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Josh\\ItemInventory\\SneakerInventory.csproj",
+  "projectFilePath": "C:\\Users\\PC\\OneDrive - Mapúa University\\Desktop\\Partial-Project\\ItemInventory\\SneakerInventory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
