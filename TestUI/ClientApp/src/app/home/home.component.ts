@@ -16,7 +16,13 @@ export class HomeComponent {
   item_price = "";
   item_quantity = "";
   item_currentID = "";
-
+  finalTotalShoes = 0;
+  latest: string = "";
+  comparePrice = 0;
+  totalAsset = 0;
+  mostExpensive = "";
+  highestStock = "";
+  topBrand = "";
   constructor(private http: HttpClient) {
     this.getAllItem();
   }
@@ -29,11 +35,50 @@ export class HomeComponent {
     this.http.get("https://localhost:7206/api/Item/GetItem")
       .subscribe((resultData: any) => {
         this.isResultLoaded = true;
-        console.log(resultData);
+
+
         this.ItemArray = resultData;
-        console.log(this.ItemArray.length)
-        let total = this.ItemArray.length;
+      
+        //For Total Shoes
+        //For total asset 
+        let totalShoes = 0;
+        let asset = 0;
+        for (let i = 0; i < this.ItemArray.length; i++) {
+          totalShoes += this.ItemArray[i].quantity;
+          asset += this.ItemArray[i].quantity * this.ItemArray[i].price;
+        }
+        this.finalTotalShoes = totalShoes;
+        this.totalAsset = asset;
+        // For latestt shoes Added 
+        this.latest = this.ItemArray[this.ItemArray.length - 1].name;
+
+
+        //For Most Expensive 
+        let compare = this.ItemArray[0].price;
+        let temp = "";
+
+        let compare2 = this.ItemArray[0].price;
+        let temp2 = "";
+        let temp3 = "";
+        for (let x = 0; x < this.ItemArray.length; x++) {
+
+          if (this.ItemArray[x].price > compare) {
+            temp = this.ItemArray[x].name;
+          }
+          this.mostExpensive = temp;
+
+          if (this.ItemArray[x].quantity > compare2) {
+            temp2 = this.ItemArray[x].name;
+            temp3 = this.ItemArray[x].brand;
+          }
+          this.highestStock = temp2;
+          this.topBrand = temp3;
+
+        }
+       
       });
+    
+   
   }
 
   register() {
