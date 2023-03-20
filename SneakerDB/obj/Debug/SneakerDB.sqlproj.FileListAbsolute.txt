@@ -1,0 +1,6 @@
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\bin\Debug\SneakerDB.dacpac
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\bin\Debug\SneakerDB.dll
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\bin\Debug\SneakerDB.pdb
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\obj\Debug\SneakerDB.sqlproj.AssemblyReference.cache
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\obj\Debug\SneakerDB.dll
+C:\Users\PC\OneDrive - Mapúa University\Desktop\Josh\SneakerDB\obj\Debug\SneakerDB.pdb

@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column price in table [dbo].[Item] is currently  NVARCHAR (50) NULL but is being changed to  INT NULL. Data
+         loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NULL.
+       The type for column quantity in table [dbo].[Item] is currently  NVARCHAR (50) NULL but is being changed to  INT NULL.
+         Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NULL.
+
+** User actions
+     Alter
+       [dbo].[Item] (Table)
+
+** Supporting actions
+
+The type for column price in table [dbo].[Item] is currently  NVARCHAR (50) NULL but is being changed to  INT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NULL.
+The type for column quantity in table [dbo].[Item] is currently  NVARCHAR (50) NULL but is being changed to  INT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NULL.
+
