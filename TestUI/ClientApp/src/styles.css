@@ -1,15 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body, html {
-  background-color: #2c2c3c;
+  background: rgb(25,36,60);
+  background: linear-gradient(100deg, rgba(25,36,60,1) 35%, rgba(18,81,112,1) 100%);
 }
 code {
   color: #e01a76;
+  
 }
 
 .btn-primary {
@@ -20,6 +19,207 @@ code {
 
 
 
-navbg {
+nav {
+  background-color: #05f7c0;
+  padding-bottom:10em;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #19243c;
+  text-transform:uppercase;
+  font-size:2em;
+  font-weight:600;
+  letter-spacing:3px;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10em;
+ 
+}
+
+.left{
+    width:75%;
+  
+}
+.right{
+    width:25%;
+}
+
+.flexBox{
+    display:flex;
+    width:100%;
+}
+
+.window{
+    width:100%;
+    height:200px;
+    margin:.5em;
+    padding:.5em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-radius:3px;
+}
+
+
+.w1 {
+  background: #fff;
   background-color: #05f7c0;
 }
+  
+
+.w2 {
+  background: #fff;
+  background-color: #05f7c0;
+}
+
+.w3 {
+  background: #fff;
+  background-color: #05f7c0;
+}
+
+.w4 {
+  background: #fff;
+  background-color: #05f7c0;
+}
+
+.w5 {
+  background: #fff;
+}
+
+
+.w6 {
+  background-color: #05f7c0;
+}
+
+.w1:hover, .w2:hover, .w3:hover, .w4:hover, .w6:hover, .w7:hover {
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg, rgba(255,255,255,1) 1%, rgba(5,247,192,1) 100%);
+  transition: 2s;
+}
+
+.w7 {
+  background-color: #05f7c0;
+}
+
+.flexBox2{
+    display:flex;
+    flex-direction:column;
+}
+
+.window2 {
+  width: 100%;
+  margin: .5em;
+  padding: 1.55em;
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+.text-right{
+    text-align:right;
+    margin-right:.5em;
+}
+
+.stats {
+  
+}
+
+.label {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+ 
+}
+
+
+
+form {
+  width: 100%;
+}
+
+
+.card {
+  border: none;
+  width: 25%;
+  justify-content: center;
+  background-color: rgb(255,255,255,0.02);
+  padding: 2em;
+}
+
+label {
+  color: white;
+  padding: 0.4em 0;
+}
+
+
+th {
+  background-color: #70d4be;
+  color: #fff;
+  border: none;
+  padding: .75em;
+  text-transform: uppercase;
+}
+
+td {
+  color: white;
+  border: none;
+  padding: .75em;
+}
+
+button.btn-success {
+  margin-right: 5px;
+  background-color: #05f7c0;
+  border: none;
+  color: #2c2c3c;
+}
+
+button.btn-danger {
+  margin-left: 5px;
+  background-color: #dc2626;
+  border: none;
+}
+
+
+.title {
+  color: #05f7c0;
+}
+
+.sub-btn {
+  width: 100%;
+  background-color: #05f7c0;
+  border: none;
+  color: #2c2c3c;
+  font-weight: 700;
+}
+
+  .sub-btn:hover {
+    box-shadow: 0px 0px 15px #05f7c0;
+  }
+
+.inv {
+  background-color: rgb(255,255,255,0.03);
+  padding: 2em;
+  width: 70%;
+  max-height: 100vh;
+}
+
+button.btn-success:hover, button.btn-primary:hover {
+  background: #05f7c0;
+  color: #19243c;
+  box-shadow: 0px 0px 15px #05f7c0;
+}
+button.btn-danger {
+  color: #19243c;
+}
+  button.btn-danger:hover {
+    background: #dc2626;
+    color: #19243c;
+    box-shadow: 0px 0px 15px #dc2626;
+  }
