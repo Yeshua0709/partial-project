@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerInventory", "Sneaker
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SneakerDB", "..\SneakerDB\SneakerDB.sqlproj", "{A4666442-0C29-4BA3-B4CB-4387FA053C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUI", "..\TestUI\TestUI.csproj", "{B3C025BC-57D8-4A0B-8972-9BBD8F7301C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUI", "..\TestUI\TestUI.csproj", "{B3C025BC-57D8-4A0B-8972-9BBD8F7301C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

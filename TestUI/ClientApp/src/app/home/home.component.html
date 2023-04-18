@@ -1,80 +1,94 @@
 
+<div class="home-container">
 
-  <div class="contain">
+  <div class="home-nav">
+    <app-nav-menu> </app-nav-menu>
+  </div>
+
+  <div class="home-content">
 
 
-    <div class="left">
-      <div class="flexBox">
+    <div class="contain">
 
-        <div class="window w1">
 
-          <h1>Most Expensive</h1>
-          <h1 class="text-right">{{mostExpensive}}</h1>
+
+      <div class="left">
+        <div class="flexBox">
+
+          <div class="window w1">
+
+            <h1>Most Expensive</h1>
+            <h1 class="text-right">{{mostExpensive}}</h1>
+
+
+          </div>
+
+          <div class="window w2">
+
+
+            <h1>Latest Added Shoes</h1>
+            <h1 class="text-right">{{latest}}</h1>
+
+          </div>
 
 
         </div>
 
-        <div class="window w2">
+        <div class="flexBox">
+
+          <div class="window w3">
 
 
-          <h1>Latest Added Shoes</h1>
-          <h1 class="text-right">{{latest}}</h1>
+            <h1>Highest Stock</h1>
+            <h1 class="text-right">{{highestStock}}</h1>
+
+
+          </div>
+
+          <div class="window w4">
+
+
+            <h1>Top brand</h1>
+            <h1 class="text-right">{{topBrand}}</h1>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="right">
+        <div class="flexBox2">
+          <div class="window2 w5">
+            <h1 class="stats">{{ItemArray.length}}</h1>
+            <h1 class="label">Active Items</h1>
+
+          </div>
+
+          <div class="window2 w6">
+            <h1 class="stats">{{finalTotalShoes}}</h1>
+            <h1 class="label">Total Shoes</h1>
+
+          </div>
+          <div class="window2 w7">
+            <h1 class="stats">₱{{totalAsset}}</h1>
+            <h1 class="label">Total Asset</h1>
+
+
+          </div>
+
 
         </div>
 
 
       </div>
 
-      <div class="flexBox">
-
-        <div class="window w3">
-
-
-          <h1>Highest Stock</h1>
-          <h1 class="text-right">{{highestStock}}</h1>
-
-
-        </div>
-
-        <div class="window w4">
-
-
-          <h1>Top brand</h1>
-          <h1 class="text-right">{{topBrand}}</h1>
-
-
-        </div>
-
-
-      </div>
     </div>
 
-
-    <div class="right">
-      <div class="flexBox2">
-        <div class="window2 w5">
-          <h1 class="stats">{{ItemArray.length}}</h1>
-          <h1 class="label">Active Items</h1>
-
-        </div>
-
-        <div class="window2 w6">
-          <h1 class="stats">{{finalTotalShoes}}</h1>
-          <h1 class="label">Total Shoes</h1>
-
-        </div>
-        <div class="window2 w7">
-          <h1 class="stats">₱{{totalAsset}}</h1>
-          <h1 class="label">Total Asset</h1>
-
-
-        </div>
-
-
-      </div>
-
-
-    </div>
 
   </div>
+</div>
+
 

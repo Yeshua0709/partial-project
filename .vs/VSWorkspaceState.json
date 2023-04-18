@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ItemInventory",
-    "\\SneakerDB",
     "\\TestUI"
   ],
-  "SelectedNode": "\\TestUI",
+  "SelectedNode": "\\ItemInventory\\SneakerInventory.sln",
   "PreviewInSolutionExplorer": false
 }

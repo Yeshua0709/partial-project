@@ -64,6 +64,7 @@ export class HomeComponent {
 
           if (this.ItemArray[x].price > compare) {
             temp = this.ItemArray[x].name;
+            compare = this.ItemArray[x].price;
           }
           this.mostExpensive = temp;
 

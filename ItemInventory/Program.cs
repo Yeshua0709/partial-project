@@ -26,10 +26,12 @@ namespace ItemInventory
             builder.Services.AddDbContext<ItemDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("ItemDbContext")));
 
+            //
 
-         
+            builder.Services.AddDbContext<UserDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("UserDbContext")));
 
-      
+
             var app = builder.Build();
 
 

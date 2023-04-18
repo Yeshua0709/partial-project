@@ -1,0 +1,43 @@
+
+<div class="background">
+
+  <div class="vertical">
+    <div class="logo-holder">
+      <i class='fas fa-shoe-prints logo-icon'></i>
+      <h1>Sneaker Inventory</h1>
+    </div>
+    
+    <div class="LogInContainer">
+      <h2>Login</h2>
+
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+
+
+
+        <div class="form-row">
+          <input type="text" class="" id="username" [(ngModel)]="username" name="username" required placeholder=" ">
+          <label for="username">Username</label>
+
+        </div>
+
+
+
+        <div class="form-row">
+
+          <input type="password" class="" id="password" [(ngModel)]="password" name="password" required placeholder=" ">
+          <label for="password">Password</label>
+
+
+        </div>
+        <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+        <button type="submit" class="" [disabled]="!loginForm.valid">signin</button>
+
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+</div>
