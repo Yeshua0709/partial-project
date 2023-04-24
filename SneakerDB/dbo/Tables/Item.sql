@@ -4,5 +4,6 @@
     [name] NVARCHAR(50) NOT NULL, 
     [brand] NVARCHAR(50) NOT NULL, 
     [price] INT NOT NULL, 
-    [quantity] INT NOT NULL
+    [quantity] INT NOT NULL, 
+    [image] NVARCHAR(50) NOT NULL
 )

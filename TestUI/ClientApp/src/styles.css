@@ -207,9 +207,13 @@ button.btn-danger {
   background-color: rgb(255,255,255);
   padding: 2em;
   width: 70%;
-  max-height: 100vh;
+  max-height: 92vh;
+  overflow-y: scroll;
 }
 
+  .inv table {
+  
+  }
 
 button.btn-danger {
   color: #fff;
@@ -257,3 +261,38 @@ button.btn-danger {
       margin:0 auto;
   }
 
+
+  .shoes-img{
+      width:90px;
+  }
+
+  th{
+      background:white;
+  }
+
+td{
+    padding:10em;
+}
+
+
+tr {
+  background: #fbfcfe;
+  border-bottom: 0.1px solid rgb(0,0,0,0.09);
+}
+
+.martop{
+    margin-top:20px;
+}
+
+.bg-w{
+    background:white;
+}
+
+table{
+    text-align:center;
+}
+
+
+.db-img{
+    width:200px;
+}

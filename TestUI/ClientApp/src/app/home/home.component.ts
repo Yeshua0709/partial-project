@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-home',
@@ -50,7 +51,7 @@ export class HomeComponent {
         this.finalTotalShoes = totalShoes;
         this.totalAsset = asset;
         // For latestt shoes Added 
-        this.latest = this.ItemArray[this.ItemArray.length - 1].name;
+        this.latest = this.ItemArray[this.ItemArray.length - 1].image;
 
 
         //For Most Expensive 
@@ -63,14 +64,17 @@ export class HomeComponent {
         for (let x = 0; x < this.ItemArray.length; x++) {
 
           if (this.ItemArray[x].price > compare) {
-            temp = this.ItemArray[x].name;
+            compare = this.ItemArray[x].price;
+            temp = this.ItemArray[x].image;
             compare = this.ItemArray[x].price;
           }
           this.mostExpensive = temp;
 
           if (this.ItemArray[x].quantity > compare2) {
-            temp2 = this.ItemArray[x].name;
+            compare2 = this.ItemArray[x].quantity;
+            temp2 = this.ItemArray[x].image;
             temp3 = this.ItemArray[x].brand;
+
           }
           this.highestStock = temp2;
           this.topBrand = temp3;

@@ -1,0 +1,105 @@
+<div class="home-container">
+
+  <div class="home-nav">
+    <app-nav-menu> </app-nav-menu>
+  </div>
+
+
+  <div class="home-content">
+
+    <div class="itemContainer">
+
+      <div class="inv">
+        <h1 class="pd-10 mb-5 title">Sneaker Collection</h1>
+        <button class="genpdf" (click)="createPDF()">Generate Table as PDF</button>
+        <button class='gencsv'(click)="createCSV()">Generate Table as  CSV</button>
+
+        <table class="table">
+          <thead>
+            <h1 *ngIf="!isResultLoaded">Please wait</h1>
+            <tr class="bg-w">
+              <th scope="col">Image</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Brand</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+
+              <th scope="col">CHANGE / REMOVE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ItemItem of ItemArray" class="">
+              <td>
+                <img src="../../assets/imgs/{{ItemItem.image}}" class="shoes-img">
+              </td>
+              <td><p class="mt-2">{{ItemItem.id }}</p></td>
+              <td><p class="mt-2">{{ItemItem.name }} </p></td>
+              <td><p class="mt-2">{{ItemItem.brand}} </p></td>
+              <td><p class="mt-2">{{ItemItem.price}} </p></td>
+
+
+
+              <td><p class="mt-2">{{ItemItem.quantity}} </p></td>
+
+              <td>
+                <button type="button" class="btn btn-success mr-2 mt-1" (click)="setUpdate(ItemItem)">Change</button>
+
+                <button type="button" class="btn btn-danger ml-2 mt-1" (click)="setDelete(ItemItem)">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="d-flex background sneakerRegister">
+        <div class="sneakerRegisterContainer">
+          <h1 class=" mb-4 title">Sneaker Register</h1>
+          <form class="formW">
+            <div class="form-group ">
+              <label>Name</label>
+              <input type="text" [(ngModel)]="item_name" [ngModelOptions]="{standalone: true}" class="form-control" id="item_name" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+              <label>Brand</label>
+              <input type="text" [(ngModel)]="item_brand" [ngModelOptions]="{standalone: true}" class="form-control" id="item_brand" placeholder="Enter Brand">
+            </div>
+
+
+            <div class="form-group">
+              <label>Price</label>
+              <input type="text" [(ngModel)]="item_price" [ngModelOptions]="{standalone: true}" class="form-control" id="item_price" placeholder="Enter Price">
+            </div>
+
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="text" [(ngModel)]="item_quantity" [ngModelOptions]="{standalone: true}" class="form-control" id="item_quantity" placeholder="Enter Quantity">
+            </div>
+
+            <div class="form-group">
+              <label>Image</label>
+              <input type="file"
+                     id="item_image"
+                     class="form-control"
+                     placeholder="Select File"
+                     [(ngModel)]="item_image"
+                     [ngModelOptions]="{ standalone: true }"
+                     (change)="handleFileInput($event.target)">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4 sub-btn" (click)="save()"> {{ isEditing ? 'Update Sneaker' : 'Add New Sneaker' }}</button>
+
+          </form>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+

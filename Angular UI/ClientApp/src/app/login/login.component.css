@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+input{
+    font-family:inherit;
+    outline:transparent;
+  
+}
+
+
+form{
+
+    position:relative;
+}
+
+
+
+  form input {
+    width: 100%;
+    padding: 23px 15px 7px;
+    transition: .3s ease;
+    border-radius:5px;
+    border:none;
+  }
+
+.form-row{
+    position:relative;
+}
+form label {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  transition: .3s ease;
+  font-size: 1.5em;
+  color: #172554;
+  font-weight:700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+  form input:focus {
+    border: 2px solid white;
+  }
+form-input:focus ~ label {
+  top: 6px;
+  font-size: 12px;
+  opacity:0.5;
+  color:#191919;
+}
+
+
+form-input:focus ~ label, form input:not(:placeholder-shown) ~ label {
+  top: 6px;
+  font-size: 12px;
+  color: #191919;
+}
+
+
+.LogInContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  background: #172554;
+  padding: 2em;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* box shadow with Facebook's color and intensity */
+}
+
+  .LogInContainer h2 {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+   
+  }
+.vertical{
+  margin-top:15em;
+}
+
+.form-row input{
+    margin-bottom:2em;
+}
+
+
+form button{
+    width:100%;
+    background:white;
+    border:none;
+    color:#172554;
+    text-transform:uppercase;
+    padding:0.5em 0;
+    font-weight:700;
+    border-radius:2px;
+    margin-top:1em;
+    margin-bottom:2em;
+}
+
+.error{
+    margin-top:-2em;
+}
+
+.logo-holder{
+    text-align:center;
+  margin-top:-10em;
+  margin-bottom:5em;
+}
+
+  .logo-holder h1 {
+    color: #172554;
+  }
+
+
+  .logo-holder i{
+      color:#172554;
+      font-size:4em;
+  }

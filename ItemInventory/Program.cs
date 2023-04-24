@@ -20,7 +20,7 @@ namespace ItemInventory
             builder.Services.AddCors(options => options.AddPolicy(name: "ItemOrigins",
     policy =>
     {
-        policy.WithOrigins("https://localhost:44480").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("https://localhost:44401").AllowAnyMethod().AllowAnyHeader();
     }));
 
             builder.Services.AddDbContext<ItemDbContext>(options =>

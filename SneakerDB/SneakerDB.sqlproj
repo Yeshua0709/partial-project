@@ -68,5 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SneakerDB.publish.xml" />
+    <None Include="SneakerDB_1.publish.xml" />
   </ItemGroup>
 </Project>

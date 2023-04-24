@@ -11,29 +11,40 @@
 
       <div class="inv">
         <h1 class="pd-10 mb-5 title">Sneaker Collection</h1>
+        <button class="btn btn-primary" (click)="generatePDF()">Generate PDF</button>
+
         <table class="table">
           <thead>
             <h1 *ngIf="!isResultLoaded">Please wait</h1>
-            <tr>
+            <tr class="bg-w">
+              <th scope="col">Image</th>
               <th scope="col">ID</th>
               <th scope="col">Name</th>
               <th scope="col">Brand</th>
               <th scope="col">Price</th>
               <th scope="col">Quantity</th>
+
               <th scope="col">CHANGE / REMOVE</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let ItemItem of ItemArray">
-              <td>{{ItemItem.id  }}</td>
-              <td>{{ItemItem.name }}</td>
-              <td>{{ItemItem.brand}}</td>
-              <td>{{ItemItem.price}}</td>
-              <td>{{ItemItem.quantity}}</td>
+            <tr *ngFor="let ItemItem of ItemArray" class="">
               <td>
-                <button type="button" class="btn btn-success mr-2" (click)="setUpdate(ItemItem)">Change</button>
+                <img src="../../assets/imgs/{{ItemItem.image}}" class="shoes-img">
+              </td>
+              <td><p class="mt-2">{{ItemItem.id }}</p></td>
+              <td><p class="mt-2">{{ItemItem.name }} </p></td>
+              <td><p class="mt-2">{{ItemItem.brand}} </p></td>
+              <td><p class="mt-2">{{ItemItem.price}} </p></td>
 
-                <button type="button" class="btn btn-danger ml-2" (click)="setDelete(ItemItem)">Remove</button>
+
+
+              <td><p class="mt-2">{{ItemItem.quantity}} </p></td>
+
+              <td>
+                <button type="button" class="btn btn-success mr-2 mt-1" (click)="setUpdate(ItemItem)">Change</button>
+
+                <button type="button" class="btn btn-danger ml-2 mt-1" (click)="setDelete(ItemItem)">Remove</button>
               </td>
             </tr>
           </tbody>
@@ -65,7 +76,18 @@
               <input type="text" [(ngModel)]="item_quantity" [ngModelOptions]="{standalone: true}" class="form-control" id="item_quantity" placeholder="Enter Quantity">
             </div>
 
-            <button type="submit" class="btn btn-primary mt-4 sub-btn" (click)="save()">Add New Sneaker</button>
+            <div class="form-group">
+              <label>Image</label>
+              <input type="file"
+                     id="item_image"
+                     class="form-control"
+                     placeholder="Select File"
+                     [(ngModel)]="item_image"
+                     [ngModelOptions]="{ standalone: true }"
+                     (change)="handleFileInput($event.target)">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4 sub-btn" (click)="save()"> {{ isEditing ? 'Update Sneaker' : 'Add New Sneaker' }}</button>
 
           </form>
         </div>

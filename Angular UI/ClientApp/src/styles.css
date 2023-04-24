@@ -1,0 +1,322 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body, html {
+  /* background: rgb(25,36,60);
+  background: linear-gradient(100deg, rgba(25,36,60,1) 35%, rgba(18,81,112,1) 100%);*/
+  background: #f0f2f5;
+}
+code {
+  color: #e01a76;
+  
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  text-transform:uppercase;
+  font-size:2em;
+  font-weight:600;
+  letter-spacing:3px;
+}
+
+.contain {
+  width:100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em .5em 1em;
+  
+ 
+}
+
+.left{
+    width:75%;
+  
+}
+.right{
+    width:25%;
+}
+
+.flexBox{
+    display:flex;
+    width:100%;
+}
+
+.window{
+    width:100%;
+    height:200px;
+    margin:.5em;
+    padding:.5em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-radius:3px;
+}
+
+
+.w1 {
+  background: #172554;
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+
+.w2 {
+  background: #fff;
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+.w3 {
+  background: #fff;
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+.w4 {
+  background: #fff;
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+.w5 {
+  background: #fff;
+  background-color: #34d399;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+  color: #191919;
+}
+
+
+.w6 {
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+
+.w7 {
+  background-color: #05f7c0;
+  background-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Replace with desired values */
+}
+
+.flexBox2{
+    display:flex;
+    flex-direction:column;
+}
+
+.window2 {
+  width: 100%;
+  margin: .5em;
+  padding: 1.55em;
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+.text-right{
+    text-align:right;
+    margin-right:.5em;
+}
+
+.stats {
+  
+}
+
+.label {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+
+}
+
+
+
+form {
+  width: 100%;
+}
+
+
+.card {
+  border: none;
+  width: 25%;
+  justify-content: center;
+  background-color: rgb(255,255,255,0.02);
+  padding: 2em;
+}
+
+label {
+  color: #191919;
+  padding: 0.4em 0;
+}
+
+
+th {
+  background-color:red;
+  color: #191919;
+  padding: .75em;
+  text-transform: uppercase;
+  
+}
+
+td {
+  color: #191919;
+  border: none;
+  padding: .75em;
+}
+
+button.btn-success {
+  margin-right: 5px;
+  background: #2dd4bf;
+  border: none;
+  color: #fff;
+}
+
+button.btn-danger {
+  margin-left: 5px;
+
+  border: none;
+  color:#fff;
+}
+
+
+.title {
+  color: #172554;
+}
+
+.sub-btn {
+  width: 100%;
+  background-color: #172554;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+.inv {
+  background-color: rgb(255,255,255);
+  padding: 2em;
+  width: 70%;
+  max-height: 92vh;
+  overflow-y: scroll;
+}
+
+  .inv table {
+  
+  }
+
+button.btn-danger {
+  color: #fff;
+}
+
+
+  .home-nav{
+      margin-top:0;
+      padding-top:0;
+  }
+ 
+  .home-container{
+      width:100%;
+      height:100vh;
+      display:flex;
+      
+
+  }
+  .home-content{
+      width:100%;
+  }
+
+  .itemContainer{
+      display:flex;
+      width:100%;
+      padding:2em;
+  }
+
+.inv {
+  width: 70%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Replace with desired values */
+}
+
+
+.sneakerRegister {
+  background: rgb(255,255,255);
+  padding: 2em;
+  margin-left: 2em;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Replace with desired values */
+}
+
+
+  .sneakerRegisterContainer{
+      margin:0 auto;
+  }
+
+
+  .shoes-img{
+      width:90px;
+  }
+
+  th{
+      background:white;
+  }
+
+td{
+    padding:10em;
+}
+
+
+tr {
+  background: #fbfcfe;
+  border-bottom: 0.1px solid rgb(0,0,0,0.09);
+}
+
+.martop{
+    margin-top:20px;
+}
+
+.bg-w{
+    background:white;
+}
+
+table{
+    text-align:center;
+}
+
+
+.db-img{
+    width:200px;
+}
+
+
+.genpdf, .gencsv{
+    margin-right:.75em;
+    background:none;
+    border:none;
+    
+}
+
+.genpdf {
+  background: #05f7c0;
+  padding: 7px 15px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.gencsv {
+  background: #172554;
+  padding: 7px 15px;
+  color: white;
+  font-weight: 700;
+  border-radius:5px;
+}

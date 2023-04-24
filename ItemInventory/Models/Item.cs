@@ -14,5 +14,7 @@ namespace ItemInventory.Models
         public int price { get; set; }
         public int quantity { get; set; }
 
+        public string image { get; set; }
+
     }
 }
